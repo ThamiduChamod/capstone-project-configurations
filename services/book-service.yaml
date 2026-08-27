@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 0 #8082
 
 spring:
   datasource:
@@ -18,6 +18,11 @@ spring:
 # Custom Property for Image Upload Directory
 file:
   upload-dir: uploads/images/
+
+  eureka:
+    instance:
+      instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+
 
 #eureka:
 #  client:
