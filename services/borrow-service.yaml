@@ -1,5 +1,5 @@
-server:
-  port: 0 #8083
+#server:
+#  port: 0 #8083
 
 spring:
   datasource:
@@ -16,9 +16,9 @@ spring:
         hibernate:
           dialect: org.hibernate.dialect.PostgreSQLDialect
 
-eureka:
-  instance:
-    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+#eureka:
+#  instance:
+#    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
 
 #eureka:
 #  client:
